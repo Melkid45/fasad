@@ -1,0 +1,29 @@
+@font-face {
+    font-family:'Inter', sans-serif ;
+    src: url(../fonts/src/Inter-Bold.ttf);
+}
+@import './reset';
+body{
+    max-width: 1440px;
+    background: #F2F2F2;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.none{
+    display: none !important;
+}
+
+.desk{
+    display: flex !important;
+}
+.mob{
+    display: none !important;
+}
+.hidden{
+    overflow: hidden;
+}

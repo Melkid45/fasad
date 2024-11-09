@@ -1,0 +1,122 @@
+.services{
+    width: 100%;
+    margin-top: 50px;
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        &-start{
+            width: 488px;
+            height: auto;
+            position: relative;
+            .splide{
+                width: 100%;
+                height: 100%;
+            }
+            h1{
+                position: absolute;
+                top: 48px;
+                left: 48px;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #252525;
+                z-index: 10;
+            }
+            .splide__slide{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .splide__arrows{
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                position: absolute;
+                top: 48px;
+                right: 48px;
+            }
+            .splide__arrow{
+                position: static;
+                width: 72px;
+                height: 72px;
+                background: #252525;
+                opacity: 0.6;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+                svg{
+                    fill: none;
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+            .splide__arrow.op-1{
+                opacity: 1;
+            }
+            .splide__arrow.op-1:hover{
+                opacity: 1;
+            }
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 48px;
+            width: 828px;
+            background: #fff;
+            &-title{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #252525;
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                &-desc{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #252525;
+                }
+                &-span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #252525;
+                }
+                &-list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    li{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #252525;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
